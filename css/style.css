@@ -33,6 +33,16 @@ html {
     font-weight: 800;
 }
 
+.risma_toggle, .risma_hamburger {
+    display: none;
+}
+
+.risma_hamburger {
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #1f2a24;
+}
+
 .risma_navbar ul {
     display: flex;
     list-style: none;
@@ -344,7 +354,7 @@ html {
 .risma_filter {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 12px;
     margin-bottom: 8px;
 }
 
@@ -365,7 +375,9 @@ html {
 }
 
 .risma_kategori-judul {
-    margin: 28px 0 14px;
+    margin: 48px 0 16px;
+    padding-top: 24px;
+    border-top: 1px solid #e3ebe6;
     scroll-margin-top: 80px;
 }
 
@@ -373,7 +385,7 @@ html {
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .risma_toolbar input, .risma_toolbar select {
@@ -706,4 +718,135 @@ html {
 
 .risma_info-kontak {
     margin-bottom: 12px;
+}
+
+@media (max-width: 900px) {
+    .risma_keranjang-isi {
+        grid-template-columns: 1fr;
+    }
+
+    .risma_footer-isi {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .risma_hero-gambar {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .risma_navbar {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 14px 16px;
+    }
+
+    .risma_hamburger {
+        display: block;
+    }
+
+    .risma_navbar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        margin-top: 12px;
+    }
+
+    .risma_toggle:checked ~ ul {
+        display: flex;
+    }
+
+    .risma_navbar li a {
+        display: block;
+        padding: 12px 4px;
+        border-top: 1px solid #e3ebe6;
+    }
+
+    .risma_hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 16px;
+    }
+
+    .risma_hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .risma_hero-cari input {
+        min-width: 0;
+    }
+
+    risma_kategori, .risma_populer, .risma_cara-pesan, .risma_menu, .risma_restoran, .risma_keranjang, .risma_checkout, .risma_kontak, .risma_tentang {
+        padding: 24px 16px;
+    }
+
+    .risma_promo {
+        padding: 32px 16px;
+    }
+
+    .risma_profil {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .risma_footer-isi {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .risma_hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .risma_hero-gambar {
+        font-size: 3rem;
+    }
+
+    .risma_kategori-daftar {
+        gap: 12px;
+    }
+
+    .risma_kategori-item {
+        flex: 1 1 40%;
+    }
+
+    .risma_toolbar select {
+        width: 100%;   
+    }
+
+    .risma_item {
+        flex-wrap: wrap;
+    }
+
+    .risma_item-info {
+        flex: 1 1 60%;
+    }
+
+    .risma_item-jumlah {
+        text-align: left;
+    }
+
+    .risma_item-subtotal {
+        margin-left: auto;
+    }
+
+    .risma_kartu-daftar {
+        grid-template-columns: 1fr;
+    }
+
+    .risma_toolbar {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .risma_toolbar input, .risma_toolbar select {
+        width: 100%;
+    }
 }
