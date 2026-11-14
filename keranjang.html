@@ -21,7 +21,7 @@
             <li><a href="restoran.html">Restoran</a></li>
             <li><a href="tentang.html">Tentang</a></li>
             <li><a href="kontak.html">Kontak</a></li>
-            <li><a href="keranjang.html" class="risma_keranjang risma_aktif">🛒</a></li>
+            <li><a href="keranjang.html">🛒<span id="risma_badge" class="risma_badge"></span></a></li>
         </ul>
     </nav>
 
@@ -31,60 +31,23 @@
 
         <div class="risma_keranjang-isi">
             <div class="risma_keranjang-daftar">
-                <div class="risma_item">
-                    <div class="risma_item-emoji">🍛</div>
-                    <div class="risma_item-info">
-                        <h3>Nasi Goreng Spesial</h3>
-                        <p>Warung Nusantara</p>
-                        <span class="risma_kartu-harga">Rp. 22.000</span>
-                    </div>
-                    <div class="risma_item-jumlah">
-                        <span>Jumlah</span>
-                        <strong>2</strong>
-                    </div>
-                    <div class="risma_item-subtotal">Rp. 44.000</div>
-                </div>
-                <div class="risma_item">
-                    <div class="risma_item-emoji">🥤</div>
-                    <div class="risma_item-info">
-                        <h3>Peach Olong Milk Tea</h3>
-                        <p>Tianlala</p>
-                        <span class="risma_kartu-harga">Rp. 20.000</span>
-                    </div>
-                    <div class="risma_item-jumlah">
-                        <span>Jumlah</span>
-                        <strong>2</strong>
-                    </div>
-                    <div class="risma_item-subtotal">Rp. 40.000</div>
-                </div>
-                <div class="risma_item">
-                    <div class="risma_item-emoji">🍢</div>
-                    <div class="risma_item-info">
-                        <h3>Sate Ayam 10 Tusuk</h3>
-                        <p>Sate Pak Haji</p>
-                        <span class="risma_kartu-harga">Rp. 28.000</span>
-                    </div>
-                    <div class="risma_item-jumlah">
-                        <span>Jumlah</span>
-                        <strong>1</strong>
-                    </div>
-                    <div class="risma_item-subtotal">Rp. 28.000</div>
-                </div>
+                <div id="risma_daftar_item"></div>
                 <a href="menu.html" class="risma_link-kembali">Tambah menu lain</a>
             </div>
+
             <aside class="risma_ringkasan">
                 <h3>Ringkasan Pesanan</h3>
                 <div class="risma_baris">
                     <span>Subtotal</span>
-                    <strong>Rp. 112.000</strong>
+                    <strong id="risma_sub">Rp. 0</strong>
                 </div>
                 <div class="risma_baris">
                     <span>Ongkos Kirim</span>
-                    <strong>Rp. 8.000</strong>
+                    <strong id="risma_ongkir">Rp. 0</strong>
                 </div>
                 <div class="risma_baris risma_total">
                     <span>Total</span>
-                    <strong>Rp. 120.000</strong>
+                    <strong id="risma_total">Rp. 0</strong>
                 </div>
                 <p class="risma_catatan">Punya kode promo? Masukkan di halaman checkout.</p>
                 <a href="checkout.html" class="risma_tombol-promo risma_penuh">Lanjut Checkout</a>
@@ -115,5 +78,6 @@
         </div>
         <p class="risma_footer-copy">&copy 2026 NyamAntar</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

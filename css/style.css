@@ -22,6 +22,9 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     height: 64px;
     padding: 24px;
     background-color: #ffffff;
@@ -49,8 +52,21 @@ html {
     gap: 24px;
 }
 
-.risma_keranjang {
-    font-size: 1.1rem;
+.risma_badge {
+    display: inline-block;
+    min-width: 20px;
+    padding: 0 6px;
+    margin-left: 4px;
+    border-radius: 10px;
+    background: #00aa5b;
+    color: #ffffff;
+    font-size: 0.75rem;
+    line-height: 20px;
+    text-align: center;
+}
+
+.risma_badge:empty {
+    display: none;
 }
 
 .risma_navbar a {
@@ -196,7 +212,7 @@ html {
     padding: 14px;
 }
 
-.risma_kartu_info {
+.risma_kartu-info {
     color: #6b7a72;
     font-size: 0.85rem;
     margin: 2px 0 8px;
@@ -214,6 +230,7 @@ html {
 }
 
 .risma_tombol {
+    display: inline-block;
     background: #00aa5b;
     color: #ffffff;
     border: 0;
@@ -222,7 +239,6 @@ html {
     font-weight: bold;
     cursor: pointer;
     transition: 0.2s;
-    display: inline-block;
     text-decoration: none;
 }
 
@@ -496,7 +512,7 @@ html {
 
 .risma_link-kembali {
     display: inline-block;
-    margin-top: 16x;
+    margin-top: 16px;
     padding: 10px 20px;
     border: 1.5px solid #00aa5b;
     border-radius: 24px;
@@ -609,6 +625,7 @@ html {
     font-weight: bold;
     cursor: pointer;
     transition: 0.2s;
+    text-decoration: none;
 }
 
 .risma_tombol-kirim:hover {
@@ -645,7 +662,7 @@ html {
 
 .risma_visi-misi {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minimax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 20px;
 }
 
@@ -662,7 +679,7 @@ html {
 
 .risma_statistik {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minimax(150px, fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, fr));
 }
 
 .risma_stat {
@@ -718,6 +735,133 @@ html {
 
 .risma_info-kontak {
     margin-bottom: 12px;
+}
+
+.risma_berhasil {
+    padding: 40px 24px;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.risma_berhasil-kontak {
+    background: #ffffff;
+    max-width: 520px;
+    width: 100%;
+    padding: 36px 28px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.risma_centang {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    background: #00aa5b;
+    animation: risma_muncul 0.5s ease;
+}
+
+.risma_centang::after {
+    content: "";
+    position: absolute;
+    left: 30px;
+    top: 17px;
+    width: 18px;
+    height: 34px;
+    border: solid #ffffff;
+    border-width: 0 6px 6px 0;
+    transform: rotate(45deg);
+}
+
+@keyframes risma_muncul {
+    0% {transform: scale(0);}
+    70% {transform: scale(1.15);}
+    100% {transform: scale(1);}
+}
+
+.risma_berhasil-sub {
+    color: #6b7a72;
+    margin: 8px 0 20px;
+}
+
+.risma_berhasil-info {
+    background: #f6f8f7;
+    padding: 12px 18px;
+    border-radius: 14px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.risma_status {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.risma_status span {
+    padding: 7px 14px;
+    border-radius: 20px;
+    background: #d5ddd5;
+    color: #555555;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.risma_status .risma_status-aktif {
+    background: #00aa5b;
+    color: #ffffff;
+}
+
+.risma_status-2 { animation: risma_nyala 0.4s ease 2s forwards;}
+.risma_status-3 { animation: risma_nyala 0.4s ease 4s forwards;}
+.risma_status-4 { animation: risma_nyala 0.4s ease 6s forwards;}
+
+@keyframes risma_nyala {
+    to {
+        background: #00aa5b;
+        color: #ffffff;
+    }
+}
+
+.risma_berhasil-aksi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.risma_qty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.risma_qty button {
+    width: 30px;
+    height: 30px;
+    border: 0;
+    border-radius: 50%;
+    background: #00aa5b;
+    color: #ffffff;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.risma_qty button:hover{
+    background: #008a49;
+}
+
+.risma_kosong {
+    text-align: center;
+    padding: 40px;
+    color: #6b7a72;
 }
 
 @media (max-width: 900px) {
@@ -777,7 +921,7 @@ html {
         min-width: 0;
     }
 
-    risma_kategori, .risma_populer, .risma_cara-pesan, .risma_menu, .risma_restoran, .risma_keranjang, .risma_checkout, .risma_kontak, .risma_tentang {
+    .risma_kategori, .risma_populer, .risma_cara-pesan, .risma_menu, .risma_restoran, .risma_keranjang, .risma_checkout, .risma_kontak, .risma_tentang {
         padding: 24px 16px;
     }
 
@@ -849,12 +993,4 @@ html {
     .risma_toolbar input, .risma_toolbar select {
         width: 100%;
     }
-}
-
-.risma_filter {
-    gap: 0;
-}
-
-.risma_chip {
-    margin: 0 10px 12px 0;
 }

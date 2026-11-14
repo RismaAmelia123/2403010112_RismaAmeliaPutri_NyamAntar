@@ -21,7 +21,7 @@
             <li><a href="restoran.html">Restoran</a></li>
             <li><a href="tentang.html">Tentang</a></li>
             <li><a href="kontak.html">Kontak</a></li>
-            <li><a href="keranjang.html" class="risma_keranjang">🛒</a></li>
+            <li><a href="keranjang.html">🛒<span id="risma_badge" class="risma_badge"></span></a></li>
         </ul>
     </nav>
 
@@ -30,8 +30,8 @@
             <h1>Lapar? Pesan sekarang, sampai dalam hitungan menit!</h1>
             <p>Ribuan menu dari restoran terdekat. Gratis ongkir untuk pesanan pertama.</p>
 
-            <form class="risma_hero-cari">
-                <input type="text" placeholder="Cari nasi goreng, boba, sate...">
+            <form class="risma_hero-cari" action="menu.html" method="get">
+                <input type="text" name="q" placeholder="Cari nasi goreng, boba, sate...">
                 <button type="submit">Cari</button>
             </form>
         </div>
@@ -162,5 +162,7 @@
         </div>
         <p class="risma_footer-copy">&copy 2026 NyamAntar</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

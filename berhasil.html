@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesanan Berhasil - NyamAntar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="risma_navbar">
+        <div class="risma_NyamAntar">
+            <h2>NyamAntar</h2>
+        </div>
+
+        <input type="checkbox" id="risma_toggle" class="risma_toggle">
+        <label for="risma_toggle" class="risma_hamburger">☰</label>
+
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="restoran.html">Restoran</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            <li><a href="keranjang.html">🛒<span id="risma_badge" class="risma_badge"></span></a></li>
+        </ul>
+    </nav>
+
+    <section class="risma_berhasil">
+        <div class="risma_berhasil-kontak">
+            <div class="risma_centang"></div>
+            <h1>Pesanan Berhasil!</h1>
+            <p class="risma_berhasil-sub">Terima kasih sudah memesan di NyamAntar. Pesananmu sedang kami proses.</p>
+            
+            <div class="risma_berhasil-info">
+                <div class="risma_baris">
+                    <span>Nomor Pesanan</span>
+                    <strong id="risma_out_nomor">NA-240001</strong>
+                </div>
+                <div class="risma_baris">
+                    <span>Penerima</span>
+                    <strong id="risma_out_nama">Pelanggan</strong>
+                </div>
+                <div class="risma_baris">
+                    <span>Alamat</span>
+                    <strong id="risma_out_alamat">-</strong>
+                </div>
+                <div class="risma_baris">
+                    <span>Pembayaran</span>
+                    <strong id="risma_out_bayar">-</strong>
+                </div>
+                <div class="risma_baris">
+                    <span>Estimasi Tiba</span>
+                    <strong>25 - 40 menit</strong>
+                </div>
+                <div class="risma_baris risma_total">
+                    <span>Total Pembayaran</span>
+                    <strong id="risma_out_total">Rp. 120.000</strong>
+                </div>
+            </div>
+
+            <div class="risma_status">
+                <span class="risma_status-aktif">Diproses</span>
+                <span class="risma_status-2">Dimasak</span>
+                <span class="risma_status-3">Diantar</span>
+                <span class="risma_status-4">Tiba</span>
+            </div>
+            
+            <div class="risma_berhasil-aksi">
+                <a href="index.html" class="risma_tombol-promo">Kembali ke Beranda</a>
+                <a href="menu.html" class="risma_link-kembali">Pesan Lagi</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="risma_footer">
+        <div class="risma_footer-isi">
+            <div>
+                <h3 class="risma_footer-logo">NyamAntar</h3>
+                <p>Pesan makanan favoritmu, diantar cepat sampai depan pintu.</p>
+            </div>
+            
+            <div>
+                <h4>Jelajahi</h4>
+                <a href="menu.html">Menu</a>
+                <a href="restoran.html">Restoran</a>
+                <a href="tentang.html">Tentang</a>
+            </div>
+
+            <div>
+                <h4>Bantuan</h4>
+                <a href="kontak.html">Hubungi Kami</a>
+                <a href="keranjang.html">Keranjang</a>
+                <a href="checkout.html">Checkout</a>
+            </div>
+        </div>
+        <p class="risma_footer-copy">&copy 2026 NyamAntar</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

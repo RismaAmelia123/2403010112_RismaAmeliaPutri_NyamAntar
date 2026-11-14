@@ -21,7 +21,7 @@
             <li><a href="restoran.html">Restoran</a></li>
             <li><a href="tentang.html">Tentang</a></li>
             <li><a href="kontak.html">Kontak</a></li>
-            <li><a href="keranjang.html" class="risma_keranjang">🛒</a></li>
+            <li><a href="keranjang.html">🛒<span id="risma_badge" class="risma_badge"></span></a></li>
         </ul>
     </nav>
 
@@ -39,7 +39,7 @@
             </select>
         </div>
 
-        <div class="risma-filter">
+        <div class="risma_filter">
             <a href="#nasi" class="risma_chip">Nasi</a>
             <a href="#cepat-saji" class="risma_chip">Cepat Saji</a>
             <a href="#minuman" class="risma_chip">Minuman</a>
@@ -57,7 +57,7 @@
                     <p class="risma_kartu-info">Warung Nusantara ⭐ 4.8</p>
                     <div class="risma_kartu-bawah">
                         <span class="risma_kartu-harga">Rp. 22.000</span>
-                        <a href="keranjang.html" class="risma_tombol">+ Tambah</a>
+                        <button class="risma_tombol risma_tambah" data-id="nasi-goreng" data-nama="Nasi Goreng Spesial" data-resto="Warung Nusantara" data-harga="22000" data-emoji="🍛">+ Tambah</button>
                     </div>
                 </div>
             </div>
@@ -68,7 +68,7 @@
                     <p class="risma_kartu-info">Warung Nusantara ⭐ 4.8</p>
                     <div class="risma_kartu-bawah">
                         <span class="risma_kartu-harga">Rp. 25.000</span>
-                        <a href="keranjang.html" class="risma_tombol">+ Tambah</a>
+                        <button class="risma_tombol risma_tambah" data-id="ayam-penyet" data-nama="Nasi Ayam Penyet" data-resto="Warung Nusantara" data-harga="25000" data-emoji="🍗">+ Tambah</button>
                     </div>
                 </div>
             </div>
@@ -79,7 +79,7 @@
                     <p class="risma_kartu-info">Warung Nusantara ⭐ 4.8</p>
                     <div class="risma_kartu-bawah">
                         <span class="risma_kartu-harga">Rp. 30.000</span>
-                        <a href="keranjang.html" class="risma_tombol">+ Tambah</a>
+                        <button class="risma_tombol risma_tambah" data-id="nasi-bento" data-nama="Nasi Bento Ayam Bakar" data-resto="Warung Nusantara" data-harga="30000" data-emoji="🍱">+ Tambah</button>
                     </div>
                 </div>
             </div>
@@ -90,7 +90,7 @@
                     <p class="risma_kartu-info">Warung Nusantara ⭐ 4.8</p>
                     <div class="risma_kartu-bawah">
                         <span class="risma_kartu-harga">Rp. 15.000</span>
-                        <a href="keranjang.html" class="risma_tombol">+ Tambah</a>
+                        <button class="risma_tombol risma_tambah" data-id="onigiri" data-nama="Onigiri" data-resto="Warung Nusantara" data-harga="15000" data-emoji="🍙">+ Tambah</button>
                     </div>
                 </div>
             </div>
@@ -103,8 +103,8 @@
                     <h3>Double Cheese Burger</h3>
                     <p class="risma_kartu-info">McDonal's ⭐ 4.9</p>
                     <div class="risma_kartu-bawah">
-                        <span class="risma_kartu-harga">Rp. 27.000</span>
-                        <a href="keranjang.html" class="risma_tombol">+ Tambah</a>
+                        <span class="risma_kartu-harga">Rp. 47.000</span>
+                        <button class="risma_tombol risma_tambah" data-id="burger" data-nama="Double Cheese Burger" data-resto="McDonal's" data-harga="47000" data-emoji="🍔">+ Tambah</button>
                     </div>
                 </div>
             </div>
@@ -115,7 +115,7 @@
                     <p class="risma_kartu-info">McDonal's ⭐ 4.9</p>
                     <div class="risma_kartu-bawah">
                         <span class="risma_kartu-harga">Rp. 15.000</span>
-                        <a href="keranjang.html" class="risma_tombol">+ Tambah</a>
+                        <button class="risma_tombol risma_tambah" data-id="french-fries" data-nama="French Fries" data-resto="McDonal's" data-harga="15000" data-emoji="🍟">+ Tambah</button>
                     </div>
                 </div>
             </div>
@@ -129,7 +129,7 @@
                     <p class="risma_kartu-info">Tianlala ⭐ 4.9</p>
                     <div class="risma_kartu-bawah">
                         <span class="risma_kartu-harga">Rp. 22.000</span>
-                        <a href="keranjang.html" class="risma_tombol">+ Tambah</a>
+                        <button class="risma_tombol risma_tambah" data-id="peach-olong" data-nama="Peach Olong Milk Tea" data-resto="Tianlala" data-harga="22000" data-emoji="🥤">+ Tambah</button>
                     </div>
                 </div>
             </div>
@@ -140,7 +140,7 @@
                     <p class="risma_kartu-info">Tianlala ⭐ 4.9</p>
                     <div class="risma_kartu-bawah">
                         <span class="risma_kartu-harga">Rp. 15.000</span>
-                        <a href="keranjang.html" class="risma_tombol">+ Tambah</a>
+                        <button class="risma_tombol risma_tambah" data-id="es-lemon" data-nama="Es Teh Lemon" data-resto="Tianlala" data-harga="15000" data-emoji="🍹">+ Tambah</button>
                     </div>
                 </div>
             </div>
@@ -154,7 +154,7 @@
                     <p class="risma_kartu-info">Sate Pak Haji ⭐ 4.7</p>
                     <div class="risma_kartu-bawah">
                         <span class="risma_kartu-harga">Rp. 28.000</span>
-                        <a href="keranjang.html" class="risma_tombol">+ Tambah</a>
+                        <button class="risma_tombol risma_tambah" data-id="sate-ayam-10" data-nama="Sate Ayam 10 Tusuk" data-resto="Sate Pak Haji" data-harga="28000" data-emoji="🍢">+ Tambah</button>
                     </div>
                 </div>
             </div>
@@ -165,7 +165,7 @@
                     <p class="risma_kartu-info">Sate Pak Haji ⭐ 4.7</p>
                     <div class="risma_kartu-bawah">
                         <span class="risma_kartu-harga">Rp. 38.000</span>
-                        <a href="keranjang.html" class="risma_tombol">+ Tambah</a>
+                        <button class="risma_tombol risma_tambah" data-id="sate-kambing" data-nama="Sate Kambing" data-resto="Sate Pak Haji" data-harga="38000" data-emoji="🍖">+ Tambah</button>
                     </div>
                 </div>
             </div>
@@ -179,7 +179,7 @@
                     <p class="risma_kartu-info">Mie Gacoan ⭐ 4.5</p>
                     <div class="risma_kartu-bawah">
                         <span class="risma_kartu-harga">Rp. 18.000</span>
-                        <a href="keranjang.html" class="risma_tombol">+ Tambah</a>
+                        <button class="risma_tombol risma_tambah" data-id="mie-pedas" data-nama="Mie Pedas" data-resto="Mie Gacoan" data-harga="18000" data-emoji="🍜">+ Tambah</button>
                     </div>
                 </div>
             </div>
@@ -190,7 +190,7 @@
                     <p class="risma_kartu-info">Mie Gacoan ⭐ 4.5</p>
                     <div class="risma_kartu-bawah">
                         <span class="risma_kartu-harga">Rp. 24.000</span>
-                        <a href="keranjang.html" class="risma_tombol">+ Tambah</a>
+                        <button class="risma_tombol risma_tambah" data-id="mie-seafood" data-nama="Mie Goreng Seafood" data-resto="Mie Gacoan" data-harga="24000" data-emoji="🍝">+ Tambah</button>
                     </div>
                 </div>
             </div>
@@ -200,11 +200,11 @@
             <div class="risma_kartu">
                 <div class="risma_kartu-gambar">🍰</div>
                 <div class="risma_kartu-isi">
-                    <h3>ChocoLava Cake</h3>
+                    <h3>Choco Lava Cake</h3>
                     <p class="risma_kartu-info">Dessert Corner ⭐ 4.6</p>
                     <div class="risma_kartu-bawah">
                         <span class="risma_kartu-harga">Rp. 21.000</span>
-                        <a href="keranjang.html" class="risma_tombol">+ Tambah</a>
+                        <button class="risma_tombol risma_tambah" data-id="lava-cake" data-nama="Choco Lava Cake" data-resto="Dessert Corner" data-harga="21000" data-emoji="🍰">+ Tambah</button>
                     </div>
                 </div>
             </div>
@@ -215,12 +215,12 @@
                     <p class="risma_kartu-info">Dessert Corner ⭐ 4.6</p>
                     <div class="risma_kartu-bawah">
                         <span class="risma_kartu-harga">Rp. 12.000</span>
-                        <a href="keranjang.html" class="risma_tombol">+ Tambah</a>
+                        <button class="risma_tombol risma_tambah" data-id="eskrim" data-nama="Es Krim Vanilla" data-resto="Dessert Corner" data-harga="12000" data-emoji="🍨">+ Tambah</button>
                     </div>
                 </div>
             </div>
         </div>
-        
+        <p class="risma_kosong" id="risma_kosong" hidden>Menu tidak ditemukan 😢</p>
     </section>
 
     <footer class="risma_footer">
@@ -246,5 +246,7 @@
         </div>
         <p class="risma_footer-copy">&copy 2026 NyamAntar</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

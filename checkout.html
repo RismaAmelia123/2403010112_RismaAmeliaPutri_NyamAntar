@@ -22,7 +22,7 @@
             <li><a href="restoran.html">Restoran</a></li>
             <li><a href="tentang.html">Tentang</a></li>
             <li><a href="kontak.html">Kontak</a></li>
-            <li><a href="keranjang.html" class="risma_keranjang">🛒</a></li>
+            <li><a href="keranjang.html">🛒<span id="risma_badge" class="risma_badge"></span></a></li>
         </ul>
     </nav>
 
@@ -31,7 +31,7 @@
         <p class="risma_checkout-sub">Isi data pengiriman, lalu konfirmasi pesananmu.</p>
 
         <div class="risma_keranjang-isi">
-            <form action="#" class="risma_form" method="post">
+            <form action="berhasil.html" class="risma_form" method="get">
                 <label for="nama">Nama Penerima</label>
                 <input type="text" id="nama" name="nama" placeholder="Nama lengkap" required>
 
@@ -72,23 +72,18 @@
 
             <aside class="risma_ringkasan">
                 <h3>Pesanan Kamu</h3>
+                <div id="risma_ringkas-item"></div>
                 <div class="risma_baris">
-                    <span>2x Nasi Goreng Spesial</span>
-                    <span>Rp. 44.000</span>
+                    <span>Ongkos Kirim</span>
+                    <span id="risma_ongkir">Rp. 0</span>
                 </div>
                 <div class="risma_baris">
-                    <span>2x Peach Olong Milk Tea</span>
-                    <span>Rp. 40.000</span>
-                </div><div class="risma_baris">
-                    <span>1x Sate Ayam 10 Tusuk</span>
-                    <span>Rp. 28.000</span>
-                </div><div class="risma_baris">
-                    <span>Ongkos Kirim</span>
-                    <span>Rp. 8.000</span>
+                    <span>Diskon</span>
+                    <span id="risma_diskon">- Rp. 0</span>
                 </div>
                 <div class="risma_baris risma_total">
                     <span>Total</span>
-                    <strong>Rp. 120.000</strong>
+                    <strong id="risma_total">0</strong>
                 </div>
                 <a href="keranjang.html" class="risma_link-kembali">Ubah pesanan</a>
             </aside>
@@ -118,5 +113,7 @@
         </div>
         <p class="risma_footer-copy">&copy 2026 NyamAntar</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
