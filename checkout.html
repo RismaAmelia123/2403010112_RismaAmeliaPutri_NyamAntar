@@ -33,16 +33,16 @@
         <div class="risma_keranjang-isi">
             <form action="berhasil.html" class="risma_form" method="get">
                 <label for="nama">Nama Penerima</label>
-                <input type="text" id="nama" name="nama" placeholder="Nama lengkap" required>
+                <input type="text" id="risma_nama" name="nama" placeholder="Nama lengkap" required>
 
                 <label for="no_hp">No. Hp</label>
-                <input type="tel" name="no_hp" id="no_hp" placeholder="08xxxxxxxxxx" required>
+                <input type="tel" name="no_hp" id="risma_no_hp" placeholder="08xxxxxxxxxx" required>
 
                 <label for="alamat">Alamat Pengantaran</label>
-                <textarea name="alamat" id="alamat" rows="3" placeholder="Jalan, nomor rumah, patokan" required></textarea>
+                <textarea name="alamat" id="risma_alamat" rows="3" placeholder="Jalan, nomor rumah, patokan" required></textarea>
 
                 <label for="waktu">Waktu Pengantaran</label>
-                <select name="waktu" id="waktu" required>
+                <select name="waktu" id="risma_waktu" required>
                     <option value="">-- Pilih Waktu --</option>
                     <option>Secepatnya</option>
                     <option>Dalam 1 jam</option>
@@ -57,13 +57,13 @@
                 </div>
 
                 <label for="promo">Kode Promo (opsional)</label>
-                <input type="text" id="promo" name="promo" placeholder="NYAM20">
+                <input type="text" id="risma_promo" name="promo" placeholder="NYAM20">
 
                 <label for="catatan">Catatan untuk penjual (opsional)</label>
-                <textarea name="catatan" id="catatan" rows="2" placeholder="Contoh: jangan pakai bawang"></textarea>
+                <textarea name="catatan" id="risma_catatan" rows="2" placeholder="Contoh: jangan pakai bawang"></textarea>
 
                 <div class="risma_setuju">
-                    <input type="checkbox" name="setuju" id="setuju" required>
+                    <input type="checkbox" name="setuju" id="risma_setuju" required>
                     <label for="setuju">Saya sudah memeriksa pesanan dan alamat.</label>
                 </div>
 

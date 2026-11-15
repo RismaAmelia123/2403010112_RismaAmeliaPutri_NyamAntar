@@ -43,6 +43,7 @@ function terapkanFilter(){
             var cocok = (nama + " " + resto).toLowerCase().indexOf(kata) !== -1;
 
             kartu.style.display = cocok ? "" : "none";
+
             if (cocok) {
                 tampilDiGrup++;
             }
@@ -150,6 +151,7 @@ function isiRingkasan(kode) {
 }
 
 // ===== Tombol "+ Tambah" =====
+
 document.querySelectorAll(".risma_tambah").forEach(function (tombol) {
     tombol.addEventListener("click", function () {
         var data = ambilKeranjang();
@@ -233,7 +235,7 @@ if (daftarItem) {
 
 // ===== Halaman checkout =====
 var ringkasItem = document.getElementById("risma_ringkas_item");
-var inputPromo = document.getElementById("promo");
+var inputPromo = document.getElementById("risma_promo");
 
 if (ringkasItem) {
     var dataCo = ambilKeranjang();
@@ -265,6 +267,7 @@ if (inputPromo) {
 }
 
 // ===== Halaman berhasil =====
+
 if (document.getElementById("risma_out_nomor")) {
     var params = new URLSearchParams(window.location.search);
     var bayar = {
